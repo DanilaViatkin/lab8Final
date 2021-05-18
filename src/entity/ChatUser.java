@@ -4,6 +4,7 @@ public class ChatUser {
     private String name;
     private long lastInteractionTime;
     private String sessionId;
+    private int messCount = 0;
 
     public ChatUser(String name, long lastInteractionTime, String sessionId) {
         this.name = name;
@@ -34,4 +35,8 @@ public class ChatUser {
     public void setSessionId(String sessionId) {
         this.sessionId = sessionId;
     }
+
+    public int getMessCount(){return messCount;}
+
+    public void setMessCount(){this.messCount++;}
 }
